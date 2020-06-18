@@ -1,16 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-"""here we are creating views in which we want reposnses"""
+""" Istead of using HTTP Response and passing a sting as a reposne 
+we use RENDER , which looks for the html templates we created to display the pages """
 
 
 def home(request):
-    return HttpResponse('home page ')
+    return render(request, 'accounts/dashboard.html')
 
 
 def products(request):
-    return HttpResponse('Products page')
+    return render(request, 'accounts/products.html')
 
 
 def customer(request):
-    return HttpResponse('Customer page')
+    return render(request, 'accounts/customer.html')

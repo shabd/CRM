@@ -54,7 +54,7 @@ ROOT_URLCONF = 'crm.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'/Users/shabd/Desktop/crm/accounts/template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
