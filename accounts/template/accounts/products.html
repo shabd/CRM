@@ -16,7 +16,17 @@
 							<th>Category</th>
 							<th>Price</th>
 						</tr>
-
+						<!--here we are creating a loop
+						that we use to query our database .
+						and we out put this value  by the view
+						we wrote in views-->
+						{% for i in products%}
+						<tr>
+							<td>{{i.name}}</td>
+							<td>{{i.category}}</td>
+							<td>{{i.price}}</td>
+						</tr>
+						{% endfor %}
 					</table>
 				</div>
 			</div>
