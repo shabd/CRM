@@ -3,10 +3,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home),
-    path('products/', views.products),
-    # Modified existing url to make it dynamic
-    # path('customer/', views.customer),
-    path('customer/<str:pk>/', views.customer),
+    # making the links more dynamic by adding name field
+    path('', views.home, name='home'),
+    path('products/', views.products, name='product'),
+    path('customer/<str:pk>/', views.customer, name='customer'),
 
 ]
